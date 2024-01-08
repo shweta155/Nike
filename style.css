@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+#left {
+    position: relative;
+    color: white;
+    width: 35%;
+    height: 100vh;
+    background-color: rgb(214, 70, 82);
+}
+
+#left #text {
+    position: absolute;
+    width: 90%;
+    top: 20%;
+    left: 10%;
+
+}
+
+#left h1 {
+    font-size: 3rem;
+    line-height: 2;
+
+}
+
+#text h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#text p {
+    font-size: 14px;
+    width: 80%;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+#left #text span {
+    font-weight: 300;
+}
+
+#text button {
+    background-color: #fff;
+    color: rgb(200, 70, 70);
+    border: none;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 8px 20px;
+}
+
+#left #btm {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    width: 90%;
+    padding: 20px;
+    color: #000;
+}
+
+#btm h3 {
+    color: rgb(200, 70, 70);
+    font-size: 20px;
+}
+
+#btm p {
+    font-size: 12px;
+    width: 80%;
+    margin-top: 5px;
+    opacity: .7;
+}
+
+#right {
+    width: 65%;
+    height: 100vh;
+    position: relative;
+}
+
+#right>img {
+    top: 50%;
+    left: 2%;
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(-30deg);
+
+}
+
+#right #centre {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    width: 60%;
+}
+
+#centre h1 {
+    color: rgb(200, 70, 70);
+    font-size: 60px;
+}
+
+#centre h1 span {
+    color: black;
+    font-weight: 300;
+
+}
+
+#centre h2 {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+#centre h2 span {
+    font-weight: 700;
+}
+
+#centre p {
+    font-size: 16px;
+    width: 80%;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+#centre #btns {
+    display: flex;
+    gap: 20px;
+}
+
+#centre button {
+    padding: 14px 22px;
+}
+
+#centre button:nth-child(1) {
+    background-color: transparent;
+    border: 2px solid rgb(200, 70, 70);
+    color: rgb(5, 4, 4);
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+#centre button:nth-child(2) {
+    background-color: rgb(200, 70, 70);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#sampletxt {
+    margin-top: 20px;
+}
+
+#samples {
+    display: flex;
+    margin-top: 60px;
+    margin-left: 15rem;
+    gap: 15px;
+}
+
+.sample {
+    width: 80px;
+    overflow: hidden;
+}
+
+.sample img {
+    width: 100%;
+    margin-top: 28rem;
+    object-fit: cover;
+}
+
+@media (max-width:1900px) {
+    .sample img {
+        margin-top: 30rem;
+
+    }
+
+}
+
+@media (max-width:1450px) {
+    .sample img {
+        margin-top: 550px;
+    }
+}
+
+@media (max-width:1045px) {
+    #main {
+        flex-direction: column;
+        min-height: 100vh;
+
+    }
+
+    #left {
+        width: 100vw;
+        min-height: 500px;
+    }
+
+    #right>img {
+        display: none;
+    }
+}
+
+@media (max-width:700px) {
+    #centre p {
+        width: 100%;
+    }
+}
